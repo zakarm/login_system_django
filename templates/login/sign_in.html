@@ -8,11 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         .signin{
-            margin-top : 15px;
+            margin-top : 10px;
             padding-left : 25px;
             padding-right : 25px;
             padding-top : 5px;
             padding-bottom : 5px;
+        }
+        .title{
+            margin-top : 30px;
+            font-family : fira-code; 
+            font-size : 30px;
+        }
+        .group{
+            margin-top : 15px;
         }
     </style>
 </head>
@@ -20,21 +28,22 @@
     <form methode="get">
         <div class="card col-sm-12">
             <div class="row  align-self-center">
-                <h1 class="card-title text-center">Sign in</h1>
+                <h1 class="card-title text-center title">Sign in</h1>
                 <div class="card-body">
-                    <div class="form-group">
+                    <div class="form-group group">
                         <label for="">Email</label>
                         <input type="text"
                             class="form-control" name="email" id="" aria-describedby="helpId" placeholder="zakariae@exemple.com">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group group">
                         <label for="">Password</label>
                         <input type="text"
                             class="form-control" name="Password" id="" aria-describedby="helpId" placeholder="********">
                     </div>
-                   <center>
+                    <center class="group">
                         <input type="submit" name="btn" id="btn" class="btn btn-success signin btn-lg btn-block" value="sign in">
-                    </center> 
+                    </center>
+                    <center><span><small><a>sign up!</a><small></span></center>
                 <div>
             </div>
         </div>

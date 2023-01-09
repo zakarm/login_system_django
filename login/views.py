@@ -13,8 +13,8 @@ def sign_in(request) :
         email = request.POST["email"]
         password = request.POST["email"]
         data = SignIn.objects.filter(email=email, password=password)
+        print(data)
     return render(request, "login/sign_in.html")
-    #return render(request, "")
 
 def sign_up(request) :
     if (request.method == "POST"):
@@ -23,4 +23,5 @@ def sign_up(request) :
         age = request.POST["age"]
         email = request.POST["email"]
         password = request.POST["email"]
+        SignIn.objects.create(fullname = fullname, city = city, age = age, email = email, password = password)
     return render(request, "login/sign_up.html")
